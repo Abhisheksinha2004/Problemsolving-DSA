@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+    int n;
+    printf("Enter thr number of variables");
+    scanf("%d",&n);
+
+    int a[n];
+    for(int i=0;i<n;i++)
+    {
+        
+        scanf("%d",&a[i]);
+
+    }
+    for(int i=0;i<n;i++)
+    {
+        printf("The %d element %d\n",i+1,a[i]);
+    }
+    
+    return 0;
+}
