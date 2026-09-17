@@ -11,7 +11,7 @@ int findWinner(int n,int k)
     int i=0;
     while(arr.size()>1)
     {
-        int idx=(i-k+1)%arr.size();
+        int idx=(i-k+1)%arr.size();//time complexity O(n2)
         arr.erase(arr.begin()+idx);
         i=idx;
     }
