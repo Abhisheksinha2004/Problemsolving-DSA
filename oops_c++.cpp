@@ -1,26 +1,51 @@
 #include<iostream>
 using namespace std;
 class Student{
-    public:
+    private:
     string name;
     int age,roll_number;
     string grade;
+    //Function Getter and Setter
+    public:
+    void setname(string s)
+    {
+        name=s;
+    }
+    void setage(int x)
+    {
+        age=x;
+    }
+    void setroll_number(int a)
+    {
+        roll_number=a;
+    }
+    void getname()
+    {
+        cout<<name<<endl;
+    }
+    void getage()
+    {
+        cout<<age<<endl;
+    }
+    int getroll_number()
+    {
+        return roll_number;
+    }
 };
 int main()
 {
     Student S1;
-    S1.name="Abhishek Sinha";
-    S1.age=21;
-    S1.roll_number=2;
-    S1.grade="A+";
+    S1.setname("Abhishek");
+    S1.setage(21);
+    S1.getname();
+    S1.getage();
+    S1.setroll_number(2);
+    cout<<S1.getroll_number();
+    
 
-    cout<<S1.age<<" ";
-    cout<<endl;
+   
+
+   
     Student S2;
-    S2.name="Rahul";
-    S2.age=22;
-    S2.roll_number=3;
-    S2.grade="A";
-    cout<<S2.name<<" ";
-
+   
 }
