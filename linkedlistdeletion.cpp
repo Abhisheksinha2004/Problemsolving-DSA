@@ -66,6 +66,26 @@ int main()
         }
     }
 
+    //delete at any position
+    int x=3;
+    Node *curr=Head;
+    Node *prev1=NULL;
+    if(x==1)
+    {
+        Node *temp=Head;
+        Head=Head->next;
+        delete(temp);
+    }
+    x--;
+    while(x--)
+    {
+        prev1=curr;
+        curr=curr->next;
+
+    }
+    prev1->next=curr->next;
+    delete(curr);
+
 
 
 
@@ -76,6 +96,8 @@ int main()
         cout<<temp->data<<" ";
         temp=temp->next;
     }
+
+    
 
 }
 
